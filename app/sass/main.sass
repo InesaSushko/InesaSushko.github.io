@@ -1,0 +1,317 @@
+@import "vars"
+body
+	font-family: 'ProximaNovaLight'
+	font-weight: 300
+	font-size: 18px
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
+.container
+	max-width: 1322px
+	margin: 0 auto
+	padding-left: 10px
+	padding-right: 10px
+header
+	background-image: url("../img/header.jpg")
+	height: 1080px
+	background-position: top center
+	background-size: cover
+	background-repeat: no-repeat
+	position: relative
+	.top-header
+		padding-bottom: 150px
+		.logo
+			display: inline-block
+			font-size: 36px
+			line-height: 130px
+			vertical-align: center
+			a 
+				color: #000
+				span 	
+					font-family: 'ProximaNovaBold'
+					font-weight: 700
+		.menu
+			float: right
+			.btn-menu
+				display: none
+			ul 
+				list-style-type: none
+				line-height: 140px
+				text-align: center
+				li 
+					display: inline-block
+					a  
+						color: #000
+						font-family: 'ProximaNovaRegular'
+						font-weight: 400
+						padding: 10px 16px
+						border-radius: 15px
+						border: 1px solid rgba(#000, 0)
+						transition: all, .3s
+						&:hover 
+							border: 1px solid rgba(#000, .2)
+	.main-text 
+		text-align: center
+		clear: both
+		.main 
+			font-family: 'ProximaNovaBold'
+			font-size: 48px
+			font-weight: 700
+		.sub-text 
+			padding-top: 8px
+			color: #949494	
+			font-family: 'ProximaNovaRegular'
+			font-weight: 400
+			padding-bottom: 80px
+		a.btn 
+			@extend %btn
+	.scroll
+		position: absolute
+		bottom: 100px 
+		left: 0
+		right: 0
+		text-align: center
+		a 
+			font-size: 43px
+			color: #fff
+		.scroll-text 
+			color: #fff
+			font-size: 14px
+			padding-top: 14px
+.section1
+	.box 
+		width: 50%
+		min-height: 522px
+		float: left
+		.wrap
+			max-width: 660px
+			text-align: left
+			box-sizing: border-box
+			padding: 0px 10px
+			h2
+				padding-top: 145px
+				font-size: 48px
+				color: #fff
+				padding-bottom: 15px
+				font-weight: 300
+				span
+					font-family: 'ProximaNovaBold'
+					font-weight: 700
+			.text 
+				padding-bottom: 45px
+				line-height: 30px
+				color: #fff
+			.btn 
+				@extend %btn
+	.box1
+		background-image: url("../img/box11.jpg")
+		.wrap
+			margin-left: auto
+			margin-right: 0
+			padding-right: 79px
+	.box2
+		background-image: url("../img/box12.jpg")
+		.wrap
+			padding-left: 79px
+			margin-left: 0
+			margin-right: auto
+.section2
+	background-color: #FFF
+	clear: both
+	text-align: center
+	padding-bottom: 105px
+	h2
+		padding: 100px 0
+		font-size: 48px
+		color: #000
+		text-align: center
+		font-family: 'ProximaNovaBold'
+		font-weight: 700
+	.items
+		text-align: left
+		.item
+			padding-bottom: 73px
+			padding-left: 155px
+			float: left
+			max-width: 50%
+			box-sizing: border-box
+			padding-right: 79px
+			position: relative
+			&:nth-child(2), &:nth-child(4)
+				padding-right: 0px
+				padding-left: 234px	
+			&::before
+				content: ''
+				background-image: url("../img/css_sprites.png")		
+				position: absolute
+				width: 105px
+				height: 95px
+				background-position: -137px -128px
+				left: 18px
+				top: 13px
+			&:nth-child(2)::before
+				width: 136px
+				height: 81px
+				background-position: -156px -10px
+				left: 79px
+			&:nth-child(2)::after
+				content: ''
+				display: block 
+				clear: both
+				float: none
+			&:nth-child(3)::before
+				width: 107px
+				height: 102px
+				background-position: -10px -128px
+				left: 22px
+			&:last-child::before
+				width: 126px
+				height: 98px
+				background-position: -10px -10px
+				left: 83px
+			&:last-child::after
+				content: ''
+				display: block 
+				clear: both
+				float: none
+				padding-bottom: 45px
+			h3
+				font-family: 'ProximaNovaBold'
+				font-weight: 700
+				font-size: 30px
+				padding-bottom: 20px
+			.description
+				color: #949494
+				line-height: 30px
+	.btn 
+		@extend %btn
+.section3
+	position: relative
+	max-height: 335px
+	.owl-carousel
+		position: relative
+		.owl-item
+			position: relative
+			img
+				width: 100%
+				height: 100%
+			.hover
+				position: absolute
+				top: 0
+				width: 100%
+				height: 100%
+				background-color: rgba(#000, 0)
+				transition: all, .4s
+				text-align: center
+				color: #fff
+				.name
+					display: none
+					font-family: 'ProximaNovaBold'
+					font-weight: 700
+					padding-top: 15%
+					padding-bottom: 12px 
+					font-size: 30px
+					transition: all, .4s
+				.text 
+					display: none
+					font-size: 16px
+					padding-bottom: 70px
+					max-width: 390px
+					margin: 0 auto
+					transition: all, .4s
+				a.btn
+					color: #fff
+					@extend %btn
+					display: none
+					transition: all, .4s
+				&:hover
+					background-color: rgba(#000, .63)
+					.text 
+						display: block
+					.name
+						display: block
+					a.btn 
+						display: inline-block
+		.owl-buttons
+			.owl-prev::after
+				content: ''
+				background-image: url("../img/left.jpg")
+				position: absolute
+				top: 45%
+				left: 0
+				z-index: 20
+				width: 56px
+				height: 56px
+			.owl-next::after
+				content: ''
+				background-image: url("../img/right.jpg")
+				position: absolute
+				top: 45%
+				right: 0
+				z-index: 20
+				width: 56px
+				height: 56px 
+.section4
+	background-image: url("../img/aboutus.jpg")
+	min-height: 900px
+	background-position: top center
+	background-size: cover
+	background-repeat: no-repeat
+	margin-top: -3px
+	text-align: center
+	h2
+		padding-top: 115px
+		padding-bottom: 32px
+		font-size: 48px
+		font-family: 'ProximaNovaBold'
+		font-weight: 700
+		color: #fff
+	p 
+		color: #949494
+		max-width: 690px
+		margin: 0 auto
+		padding-bottom: 95px
+	.items
+		padding-bottom: 110px
+		.item
+			padding: 37px 25px 0 25px
+			display: inline-block
+			max-width: 224px
+			img 
+				border-radius: 50%
+			h3
+				font-size: 24px
+				font-family: 'ProximaNovaBold'
+				font-weight: 700
+				color: #fff
+				padding: 24px 0 17px
+			p 
+				line-height: 30px
+				padding-bottom: 0px
+	a.btn 
+		@extend %btn
+.section5
+	padding-top: 40%
+	position: relative
+	iframe
+		position: absolute
+		top: 0
+		height: 100%
+		width: 100%
+		border: 0
+.section6
+	background-color: #FFF
+	text-align: center
+	padding-top: 56px
+	padding-bottom: 56px
+	p 	
+		line-height: 36px
+		color: #a7acbc
+		span
+			font-family: 'ProximaNovaBold'
+			font-weight: 700
+
+#form
+	@extend %form
+@import "media"

@@ -1,0 +1,214 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.section4
+		.items
+			.item
+				padding: 37px 5px 0 
+//**
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.section4
+		padding-bottom: 60px
+		.items
+			padding-bottom: 60px
+			.item
+				padding: 37px 55px 0px
+
+@media only screen and (max-width : 935px)
+	header
+		.top-header
+			.logo
+				font-size: 30px
+			.menu 
+				ul 
+					li 
+						a  
+							padding: 7px 7px
+	.section1
+		.box 
+			.wrap
+				h2
+					font-size: 40px
+				.text 
+					font-size: 15px
+	.section2
+		h2
+			font-size: 40px
+		.items
+			text-align: center
+			.item
+				padding: 105px 10px 35px 
+				float: none
+				max-width: 100%
+				&:nth-child(2), &:nth-child(4)
+					padding-left: 0px	
+				&::before
+					left: 0
+					right: 0
+					margin: 0 auto
+					top: 0px
+				&:nth-child(2)::before, &:nth-child(3)::before, &:last-child::before
+					left: 0
+					top: 0
+	.section4
+		h2
+			font-size: 40px
+			padding-top: 100px
+		p 
+			padding-bottom: 55px 
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	header
+		height: 750px
+		.top-header
+			.menu 
+				.btn-menu
+					display: block
+					color: #000
+					cursor: pointer
+					.icon-menu
+						line-height: 130px
+						font-size: 33px
+						padding-right: 25px
+				ul
+					display: none
+					text-align: center
+					float: none
+					position: absolute
+					left: 0
+					right: 0
+					top: 135px
+					&::after, &::before
+						content: ''
+						background: #49007c
+						background: -mox-linear-gradient(left, #49007c 0%, #c20085 100%)
+						background: -webkit-linear-gradient(left, #49007c 0%, #c20085 100%)
+						background: linear-gradient(to right, #49007c 0%, #c20085 100%)
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49007c', endColorstr='#c20085',GradientType=1 )
+						height: 5px
+						display: block						
+					li  
+						display: block
+						line-height: 76px
+						padding: 0
+						background: #49007c
+						background: -mox-linear-gradient(left, #49007c 0%, #c20085 100%)
+						background: -webkit-linear-gradient(left, #49007c 0%, #c20085 100%)
+						background: linear-gradient(to right, #49007c 0%, #c20085 100%)
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49007c', endColorstr='#c20085',GradientType=1 )
+						a
+							color: #fff
+							border: none
+							display: block
+							width: 100%
+							font-size: 22px
+							border-radius: 0px
+							padding: 0
+							transition: all, .4s
+							&:hover
+								border: none
+								background-color: rgba(#f6f5f1, .3)
+	.section1
+		.box 
+			float: none
+			width: 100%
+			min-height: 450px
+			padding-right: 0
+			padding-left: 0
+			.wrap
+				text-align: center
+				max-width: 100%
+				h2
+					font-size: 40px
+					padding-top: 115px
+				.text 
+					font-size: 15px
+		.box1
+			.wrap
+				margin-left: 0
+				padding-right: 0
+		.box2
+			.wrap
+				padding-left: 10px
+				margin-right: 0
+	.section3
+		.owl-carousel
+			.owl-item
+				.hover
+					.name
+						padding-top: 40%
+					&:hover
+						.text 
+							display: none
+			.owl-buttons
+				.owl-prev::after
+					display: none
+				.owl-next::after
+					display: none
+	.section5
+		padding-top: 50%
+	.section6
+		p 
+			font-size: 14px
+			span 
+				font-size: 14px
+							
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	header
+		.top-header
+			padding-bottom: 100px
+			.logo
+				font-size: 20px
+		.main-text
+			.main 
+				font-size: 35px
+			.sub-text
+				font-size: 16px
+	.section5
+		padding-top: 70%
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+	header
+		.top-header
+			.menu 
+				ul
+					display: block !important	
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
